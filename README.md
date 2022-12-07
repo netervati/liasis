@@ -8,12 +8,12 @@ from liasis import Typed
 
 @Typed.func(name=str, return_value=str)
 def message(name):
-    print (f"The value passed is {name}")
+    print(f"The value passed is {name}")
 
 message("Hello World!")
 ```
 Result:
-```bash
+```
 liasis.errors.InvalidReturnType: Expected message to return <class 'str'> but got <class 'NoneType'>
 ```
 
